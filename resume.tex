@@ -1,0 +1,236 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Ha Dang Vu
+% Based on the sb2nov resume template by Jake Gutierrez
+% Original template: https://github.com/sb2nov/resume
+% License : MIT
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\newcommand{\linkicon}{\,\faExternalLink*}
+\newcommand{\githubicon}{\,\faGithub}
+\usepackage{multicol}
+\usepackage{xcolor}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Ha Dang Vu} \\ \vspace{1pt}
+    \textcolor{OliveGreen}{\textbf{DATA SCIENCE INTERN | MACHINE LEARNING | STATISTICS}} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ \underline{647-551-3275} ~ \href{mailto:dangvuha.2803@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{dangvuha.2803@gmail.com}} ~ 
+    \href{https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B5MrB6uuTTTWQsjMot5iggw%3D%3D}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/hadangvu}}  ~
+    \href{https://github.com/hdangvu}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/hdangvu}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{\textcolor{blue}{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {HEC Montréal}{Sep 2025 -- Present}
+      {Master of Data Science and Business Analytics}{\textcolor{blue}{Montréal, Québec}}
+    \resumeSubheading
+      {University of Waterloo}{Sep 2020 -- Dec 2024}
+      {Bachelor of Mathematics in Computational Mathematics}{\textcolor{blue}{Waterloo, Ontario}}
+      \resumeItemListStart
+        \resumeItem {Minor in Computing, Combinatorics and Optimization}
+      \resumeItemListEnd
+    \resumeSubheading
+      {\href{https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:73bba52b-6c54-45c9-bcc8-858628f5fc46}{\textbf{Vector Institute}~\faExternalLink*}}{Jul 2024}
+      {CIFAR Deep Learning Reinforcement Learning 2024 – Summer School}{\textcolor{blue}{Toronto, Ontario}}
+  \resumeSubHeadingListEnd
+
+  
+%-----------PROGRAMMING SKILLS-----------
+\section{\textcolor{blue}{Technical Skills}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Python, R, SQL, MATLAB.} \quad
+    \textbf{ML \& Data}{: NumPy, Pandas, Scikit-learn, PyTorch, TensorFlow, HuggingFace.} \quad
+    \textbf{Tools}{: Git, Linux, Jupyter, Power BI, Tableau.}
+  }}
+\end{itemize}
+ \vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{\textcolor{blue}{Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Assistant}{Nov 2025 -- Present}
+      {HEC Montréal}{\textcolor{blue}{Montréal, Québec}}
+      \resumeItemListStart
+        \resumeItem{Performed large-scale analysis of \textbf{Machine Learning applications in Information Systems}, systematically extracting structured features (data types, algorithms, contexts) from academic studies using \textbf{Covidence}.}
+        \resumeItem{Built a reproducible review pipeline using \textbf{Covidence}, applying consistent inclusion criteria and data schemas - mirroring real-world \textbf{data curation and feature engineering} workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Sep 2024 -- Dec 2024}
+      {WiM Directed Reading Program @ UWaterloo}{\textcolor{blue}{Waterloo, Ontario}}
+      \resumeItemListStart
+        \resumeItem{Applied \textbf{convex optimization} methods (PGD, FISTA, ADMM) to \textbf{image denoising} and \textbf{deblurring tasks}, modeling sparse signal recovery via $L_1$-regularization.}
+        \resumeItem{Implemented and evaluated \textbf{image restoration} algorithms in MATLAB, comparing convergence, stability, and reconstruction quality across iterative solvers.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------PROJECTS-----------
+\section{\textcolor{blue}{Projects}}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\href{https://github.com/hdangvu/bixi-trip-behavior-analysis}
+          {\textbf{BIXI Montréal Trip Behavior Analysis}\githubicon} $|$ \emph{R, RMarkdown, GLM, Logistic Regression}}{}
+          \resumeItemListStart
+            \resumeItem{Modeled \textbf{trip duration} and \textbf{rush-hour usage} using interpretable \textbf{log-linear} and \textbf{binomial GLMs}, incorporating temporal and weather effects.}
+            \resumeItem{Found weekend trips $\sim$\textbf{10\% longer}, rush-hour odds $\sim$\textbf{50\% lower} on weekends, and \textbf{heavy rain reducing rush-hour activity} on Fridays/Saturdays; identified strong \textbf{station-level heterogeneity} motivating mixed models.}
+         \resumeItemListEnd
+         \vspace{-14pt}
+
+      \resumeProjectHeading
+         {\href{https://github.com/hdangvu/mnar-sensitivity-analysis}
+         {\textbf{MNAR Sensitivity Analysis for Predictive Modeling}\githubicon} $|$ \emph{R, Monte Carlo Simulation, Logistic Regression, Missing Data}}{}
+         \resumeItemListStart
+           \resumeItem{Built a \textbf{Monte Carlo framework} to analyze \textbf{MNAR effects}, separating degradation by \textbf{feature importance} and \textbf{missingness intensity} (25\%--70\%).}
+           \resumeItem{Showed \textbf{PMM failure under MNAR} (up to \textbf{11\% accuracy loss}) and that \textbf{delta adjustment} recovers \textbf{$\sim$87\%} of signal, while \textbf{mis-specified corrections} amplify bias.}
+         \resumeItemListEnd
+         \vspace{-14pt}
+    
+      \resumeProjectHeading
+          {\href{https://github.com/hdangvu/finbert-knowledge-distillation}{\textbf{Efficient Financial Sentiment Modeling via Knowledge Distillation}\githubicon} $|$ \emph{Python, PyTorch, HuggingFace Transformers}}{}
+          \resumeItemListStart
+            \resumeItem{Built a lightweight financial text classification model using \textbf{Knowledge Distillation} to transfer knowledge from a large model to a smaller one, reducing model size by \textbf{10$\times$} (109.5M $\rightarrow$ 11.7M) with minimal performance loss.}
+            \resumeItem{Achieved \textbf{97.35\% test accuracy} and \textbf{0.9626 macro-F1} on real financial news data, with \textbf{no increase in prediction time} ($\sim$2.0 ms per document), making the model suitable for large-scale or real-time use.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+      
+      \resumeProjectHeading
+         {\href{https://uwaterloo.ca/statistics-and-actuarial-science/news/students-tackle-data-2024-asa-datafest}
+         {\textbf{ASA DataFest Winner – CourseKata Learning Platform}~\faExternalLink*} $|$ \emph{Python, R, Jupyter Notebook}}{}
+         \resumeItemListStart
+            \resumeItem{Won \textbf{Best Insight} at ASA DataFest 2024 (48-hour datathon), earning a \textbf{\$2000 award} for data-driven recommendations.}
+            \resumeItem{Analyzed a \textbf{3M+ record} educational dataset, defining and validating student performance metrics via \textbf{correlation analysis} and \textbf{statistical hypothesis testing}, while assessing key data limitations.}
+         \resumeItemListEnd
+         \vspace{-14pt}      
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+\end{document}
